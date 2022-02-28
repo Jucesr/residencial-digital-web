@@ -1,48 +1,24 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import Body from "../components/Body";
+import Head from 'next/head';
 
-export default function Home({ allPostsData }) {
+function App() {
   return (
-    <Layout home>
+    <div className="App">
       <Head>
-        <title>{siteTitle}</title>
+        <title>Residencial digital | Software para residenciales</title>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"/>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="description" content="Software para el expediente electrónico de tus pacientes" />
+        <meta name="og:title" property="og:title" content="Expediente electrónico de pacientes"/>
+        <meta name="twitter:card" content="Expediente electrónico de pacientes"></meta>
+        <link rel="canonical" href="https://www.pacientesano.com/"></link>
+
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
-  )
+      <Body />
+    </div>
+  );
 }
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
+export default App;

@@ -1,0 +1,93 @@
+@import 'base.scss';
+
+.Contact{
+   background: white;
+   color: $primary-color;
+   padding-bottom: 80px;
+ }
+ 
+ .Divider{
+   display: flex;
+ }
+ 
+ .Divider section{
+   width: 50%;
+ }
+ 
+ .ContactForm{
+   width: 85%;
+   margin: auto;
+ }
+ 
+ .ContactFormButton{
+   width: 100%;
+ }
+ 
+ .FormField{
+   text-align: left;
+   font-size: 30px;
+   font-weight: 300;
+   margin-bottom: 15px;
+ }
+ 
+ .FormField div{
+   margin-bottom: 5px;
+ }
+ 
+ .FormField input{
+   width: 100%;
+   padding: 10px;
+   font-size: 20px;
+   border: 1px solid $primary-color;
+   background-color: #FAFAFA;
+ }
+ 
+ .FormField textarea{
+   width: 100%;
+   height: 300px;
+   padding: 10px;
+   font-size: 20px;
+   border: 1px solid $primary-color;
+   background-color: #FAFAFA;
+   font-family: 'Roboto', sans-serif;
+ }
+ 
+ .Social{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   flex-direction: column;
+ }
+ 
+ .SocialTitle{
+   font-size: 30px;
+   font-weight: 300;
+ }
+ 
+ .SocialImages{
+  
+   margin: 20px 0;
+ }
+ 
+ .SocialImages img{
+   margin: 0 15px;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   .ContactForm{
+      width: 100%;
+    }
+   .Divider{
+     flex-direction: column;
+   }
+
+   .Divider section{
+      width: 100%;
+    }
+
+    .Divider section:first-child{
+       margin-bottom: 4rem;
+    }
+
+ }

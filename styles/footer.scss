@@ -1,0 +1,107 @@
+.Footer{
+   display: flex;
+   background-color: #FAFAFA;
+   color: black;
+   font-weight: 300;
+   padding: 30px 0;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   
+ }
+ 
+ .FooterWrapper{
+   justify-content: space-between;
+   display: flex;
+   width: 100%;
+   max-width: 1600px;
+    padding: 0 3rem;
+ }
+ 
+ .FooterLeft{
+   text-align: left;
+ }
+ 
+ .FooterLinks{
+   display: flex;
+   justify-content: space-between;
+   color: black;
+   padding-bottom: .5rem;
+ 
+ }
+ 
+ .FooterCopyRight{
+   color: grey;
+   font-size: .85rem;
+ }
+ 
+ .FooterLinks a{
+   color: #7f7e7e;
+   font-size: 1rem;
+   margin-right: 20px;
+   cursor: pointer;
+   opacity: 0.5;
+   transition: opacity 0.2s ease 0s;
+   
+ }
+ 
+ .FooterLinks a:hover{
+   color: black;
+   opacity: 1;
+ }
+ 
+ .FooterRigth{
+   text-align: right;
+   color: gray;
+ }
+ 
+ .FooterContacts{
+   padding-top: .5rem;
+ }
+ 
+  /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 600px) {
+
+   .FooterWrapper{
+     flex-direction: column;
+     justify-content: center;
+   }
+   .FooterLeft{
+      margin-bottom: 2rem;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgb(214, 214, 214);
+   }
+   .FooterCopyRight{
+      text-align: center;
+   }
+   .FooterLinks{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+   }
+
+   .FooterLinks a{
+      margin-bottom: .7rem;
+      margin-right: 0;
+   }
+
+   .FooterRigth{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+   }
+
+   .FooterTitle{
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #7f7e7e;
+      
+   }
+ }
+ 
