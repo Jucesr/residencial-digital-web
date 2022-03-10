@@ -122,9 +122,9 @@ const Contact = ({ elementName }) => {
                         </div>
                   <div className="SocialImages">
                      <a href="https://api.whatsapp.com/send?phone=526861779471" target="blank"><Icon className="SocialMediaLink" size="huge" name="whatsapp" /></a>
-                     <a href="https://www.facebook.com/pacientesano/" target="blank"><Icon className="SocialMediaLink" size="huge" name="facebook" /></a>
-                     <a href="https://www.instagram.com/pacientesano/" target="blank"><Icon className="SocialMediaLink" size="huge" name="instagram" /></a>
-                     <a href="https://www.youtube.com/channel/UCaBzS-VAGdYiEM3dA2r_boA/" target="blank"> <Icon className="SocialMediaLink" size="huge" name="youtube" /></a>
+                     <a href="https://www.facebook.com/Residencial-Digital-110508651559025" target="blank"><Icon className="SocialMediaLink" size="huge" name="facebook" /></a>
+                     {/* <a href="https://www.instagram.com/pacientesano/" target="blank"><Icon className="SocialMediaLink" size="huge" name="instagram" /></a> */}
+                     {/* <a href="https://www.youtube.com/channel/UCaBzS-VAGdYiEM3dA2r_boA/" target="blank"> <Icon className="SocialMediaLink" size="huge" name="youtube" /></a> */}
                   </div>
                </div>
             </section>
