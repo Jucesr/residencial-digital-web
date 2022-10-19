@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import Page from "./Page";
 import Banner from './Banner';
 
-const Layout = ({ children, headerInverted = false, pageColor = "white" }) => {
+const Layout = ({ children, headerInverted = false, pageColor = "white",includeBanner = true}) => {
    return <React.Fragment >
 
       
@@ -20,7 +20,7 @@ const Layout = ({ children, headerInverted = false, pageColor = "white" }) => {
       <Page color={pageColor}>
          {children}
       </Page>
-      <Banner/>
+      {includeBanner && <Banner/>}
       <Footer />
    </React.Fragment >
 }
